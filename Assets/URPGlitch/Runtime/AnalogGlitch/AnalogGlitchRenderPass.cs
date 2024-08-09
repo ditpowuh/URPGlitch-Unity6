@@ -69,7 +69,7 @@ namespace URPGlitch.Runtime.AnalogGlitch
                 var source = renderingData.cameraData.renderer.cameraColorTargetHandle;
 
                 var cameraTargetDescriptor = renderingData.cameraData.cameraTargetDescriptor;
-                cameraTargetDescriptor.depthBufferBits = 0;;
+                cameraTargetDescriptor.depthBufferBits = 0;
                 cmd.GetTemporaryRT(Shader.PropertyToID(_mainFrame.name), cameraTargetDescriptor);
                 cmd.Blit(source, _mainFrame.nameID);
 
