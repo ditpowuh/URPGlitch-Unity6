@@ -1,33 +1,33 @@
-# URPGlitch
+# URPGlitch-Unity6
 
-Glitch effect with URP(Universal Render Pipeline).
+Glitch effect with URP (Universal Render Pipeline), with some fixes for Unity 6.
 
 > **Note**  
-> This project is a port of [keijiro/KinoGlitch](https://github.com/keijiro/KinoGlitch) to work with URP12.  
-> Please note that this project was implemented for study purposes and is not actively maintained.  
+> This project a fork of [mao-test-h/URPGlitch](https://github.com/mao-test-h/URPGlitch), which is a port of [keijiro/KinoGlitch](https://github.com/keijiro/KinoGlitch) to work with URP.  
+> This was made to fix the issues that came with Unity 6.  
+> This project is not actively maintained, like with URPGlitch.
+>   
+> I have fixed all deprecation errors in the code (such as regarding 'RenderTargetHandle's), and currently works with Unity 6 Preview (see below for the exact version).  
+> *<ins>However</ins>*, there is still obsolete code that is yet to be fixed. With how it is now, the project does not use the new RenderGraph API, and will eventually not work in later Unity updates.
 
+## Tested Unity versions
 
-https://user-images.githubusercontent.com/17098415/179404306-01f9a32f-7347-4523-878d-93dbbe9bac0e.mov
-
-
-## Supported Unity versions
-
-- Unity 2021.3+
-    - URP 12.1.7
+- Unity 6 Preview (6000.0.14f1)
+    - URP 17.0.3
 
 
 ## Installing
 
 Please add the following URL to `Package Manager -> [Add package from git URL...]`.
 
-> `https://github.com/mao-test-h/URPGlitch.git?path=Assets/URPGlitch`
+> `https://github.com/ditpowuh/URPGlitch-Unity6.git?path=Assets/URPGlitch`
 
 or add the following URL to `Package/manifest.json -> dependencies`.
 
 ```json
 {
   "dependencies": {
-    "com.mao-test-h.urp-glitch": "https://github.com/mao-test-h/URPGlitch.git?path=Assets/URPGlitch",
+    "com.ditpowuh.urp-glitch": "https://github.com/ditpowuh/URPGlitch-Unity6.git?path=Assets/URPGlitch",
   }
 }
 ```
